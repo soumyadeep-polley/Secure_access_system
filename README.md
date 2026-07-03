@@ -12,6 +12,10 @@ login attempts, escalates to a tamper alarm on repeated failures, logs
 access events, and allows full recovery via a physical reset button if the
 Admin password is forgotten.
 
+## Live Simulation
+
+[![Open in Tinkercad](https://img.shields.io/badge/Tinkercad-Open%20Simulation-1785ff?logo=autodesk&logoColor=white)](https://www.tinkercad.com/things/gORqQg2TXE3-secureaccesssystem?sharecode=KmcsitV2X4wWI1K4uF6tULDd4pB0N3sT_H1ZycaNzI4)
+
 ## Features
 
 - Role-based access control — separate Admin and Guest passwords, with settings menu access restricted to Admin only
@@ -99,13 +103,6 @@ Admin password is forgotten.
 | Resistors (220 ohm for LEDs) | 2 |
 | Breadboard + jumper wires | — |
 | DS3231 RTC Module (real hardware only, optional) | 1 |
-
-## Circuit Diagram
-
-![Circuit Diagram](docs/circuit_diagram.png)
-
-Full pin assignments are also documented as comments at the top of
-`SmartLock_AdminGuest.ino`.
 
 ## Default Credentials
 
