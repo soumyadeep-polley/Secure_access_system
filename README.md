@@ -12,6 +12,18 @@ login attempts, escalates to a tamper alarm on repeated failures, logs
 access events, and allows full recovery via a physical reset button if the
 Admin password is forgotten.
 
+##Features
+
+Role-based access control — separate Admin and Guest passwords, with settings menu access restricted to Admin only
+EEPROM-persisted storage — passwords and the auto-close timer setting survive power loss and reboots
+Escalating security response — 3 wrong attempts trigger a 30-second lockout; repeated lockouts escalate to a continuous tamper alarm
+Admin-only override — only a correct Admin password can silence an active tamper alarm
+Access logging — tracks the last 5 access events, tagged by role (Admin/Guest) and timestamp
+RTC-ready logging — supports real-time-stamped logs via a DS3231 RTC module on physical hardware, with automatic fallback to relative-time logging in simulation
+Configurable auto-close — door auto-relocks after an adjustable delay, set via the Admin menu
+Hardware factory reset — a dedicated reset button restores default credentials after a 5-second hold, preventing permanent lockout
+On-device menu system — Admin can change passwords, view logs, adjust settings, and view firmware info directly from the keypad and LCD, no external tools required
+
 ## How It Works
 
 ### Unlocking the Door
